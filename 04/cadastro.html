@@ -8,35 +8,43 @@
 <body>
     
     <form action="https://qfqdkj.hospedagemelastica.com.br/pweb/salvar.jsp" method="post">
-        Login: <br>
-        <input type="text" name="login"><br>
+        Login *: <br>
+        <input type="text"  required name="login"><br>
+
         Senha:<br>
         <input type="password" maxlength="8" name="senha"><br>
-        Confirma Senha:<br>
-        <input type="password" name="confirmasenha"><br>
-        Nome:<br>
+        Confirma Senha : <br>
+        <input type="password" name="confirmarsenha"><br>
+
+        Nome : <br>
         <input type="text" name="nome"><br>
-        Sexo: <br>
+
+        Sexo : <br>
         <input type="radio" value="Masculino" name="sexo">Masculino<br>
         <input type="radio" value="Feminino" name="sexo">Feminino<br>
-        Email:<br>
-        <input type="email" nome="email"><br>
-        Interesses: <br>
+
+        Email : br>
+        <input type="email" nome="email"><br><br>
+
+        Interesses : <br>
         <input type="checkbox" value="Futebol" name="interesses">Futebol<br>
         <input type="checkbox" value="Política" name="interesses">Política<br>
         <input type="checkbox" value="Economia" name="interesses">Economia<br>
         <input type="checkbox" value="Carros" name="interesses">Carros<br>
         <input type="checkbox" value="Celebridades" name="interesses">Celebridades<br>
         <br>
-        Estado:<br>
+
+        Estado : <br>
         <select name="estado">
-            <option value="pi">Piauí</option>
-            <option value="ma">Maranhão</option>
-            <option value="sc">Santa Catarina</option>
-            <option value="rs">Rio Grande do Sul</option>
+            <option value="Pi">Piauí</option>
+            <option value="Ma">Maranhão</option>
+            <option value="Sc">Santa Catarina</option>
+            <option value="Rs">Rio Grande do Sul</option>
         </select><br><br>
-        Observação: <br>
-        <textarea name="Observação" ></textarea><br><br>
+
+        Observação : <br>
+      
+        <textarea name="observação"></textarea><br><br>
 
         <input type="submit" value="Enviar">
       
