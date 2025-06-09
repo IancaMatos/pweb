@@ -16,7 +16,7 @@
 }
 
 .imagem {
-    width: 250px;
+    width: 230px;
     border-radius: 10%;
 }
 .noticia{
@@ -29,20 +29,37 @@
     margin: 10px;
     float: left;
 }
-p:hover {
+.noticia:hover{
+    border: 1px solid #615f5f;
+    
+}
+/* p:hover {
            background-color: #FFC1C1;
-        }
+        } */
     p {
          margin: 8px;
             padding: 10px;
-            background-color: #FFDCDC;
-            text-decoration: none;
+            /* background-color: #FFDCDC; */
+            text-decoration: underline;
             border-radius: 5px;
             cursor: pointer;
+            color: blue;
             
     }    
+    h2{
+        text-align: center;
+    }
+
+    .att{
+    position: fixed;
+    bottom: 0;
+    right: 50;
+    width: 300px;
+    }
+   
 </style>
 <body>
+    <h1></h1>
        <div class="container">
         <div>
             <br>
@@ -66,9 +83,20 @@ p:hover {
                 <img class="imagem" src="./imagens/imagem5.png">
                 <p>Resumo</p>
             </div>
-        </div>
-        
-            <p> Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição tipográfica. Lorem Ipsum tem sido o texto fictício padrão da indústria desde 1500, quando um impressor desconhecido pegou uma prova de tipos e a misturou para fazer um livro de espécimes de tipos. Ela sobreviveu não apenas a cinco séculos, mas também ao salto para a composição tipográfica eletrônica, permanecendo essencialmente inalterada. Foi popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum. </p>
+            
+        </div> 
+       
     </div>
+     <div>
+            <span>       Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição tipográfica.
+                Lorem Ipsum tem sido o texto fictício padrão da indústria desde 1500, quando um impressor desconhecido
+                pegou uma prova de tipos e a misturou para fazer um livro de espécimes de tipos. Ela sobreviveu não apenas
+                a cinco séculos, mas também ao salto para a composição tipográfica eletrônica, permanecendo essencialmente
+                inalterada. Foi popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de Lorem
+                Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo versões de 
+                Lorem Ipsum.
+             </span>
+        </div>
+    <div class="att"> <a target="_blank" href="aula.html"><h2> - Atividade Notícia </h2></a> </div>
 </body>
 </html>
