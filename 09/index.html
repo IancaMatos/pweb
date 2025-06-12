@@ -3,50 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posicionamentos</title>
-</head>
-<style>
-    body {
-        background: #61bd8c;
+    <title>Document</title>
+  <style>
+    body{
+        box-shadow: 10px;
     }
-    #conteudo {
-        background: #FFFFFF;
-        padding: 10px;
-        width: 900px;
-        margin: 30px auto;
-      }
-    .caixa{
-        background: red;
-        margin: 10px;
-        width: 100px;
-        height: 100px;
-        color: #FFFFFF;
-    }
-    #relativo{
-        position: relative;
-        left: 30px;
-    }
-    #absoluto{
-        position: absolute;
-        left: 30px;
-    }
-    #fixo{
-        position: fixed;
-        left: 200px;
-        top: 0px;
-    }
+    #header{
+    position: fixed;
+    background:lightskyblue;
+    width: 100%;
+    height: 15%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    align-content: center;
+    z-index: 1000;
+}
 
+#menu{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background: lightcoral;
+    top: 15%;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    align-content: center;
 
-</style>
-<body>
-    <span>Container body</span>
-    <div id="conteudo">
-        Container div
+}
 
-        <div class="caixa" id="relativo">Relativo</div>
-        <div class="caixa" id="absoluto">Absoluto</div>
-        <div class="caixa" id="fixo">Fixo </div>   
-    </div>
+#left{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 0%;
+    right: 75%;
+    top: 25%;
+    text-align: center;
+    align-content: center;
+    background: rgb(233, 194, 66);
+}
+
+#center{
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    top:25%;
+    right: 25%;
+    text-align: center;
+    align-content: center;
+    background: rgb(109, 211, 78);
+}
+
+#right{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 75%;
+    right: 0%;
+    top: 25%;
+    text-align: center;
+    align-content: center;
+    background: rgb(236, 171, 72);
+}
+
+#footer{
+    position: absolute;
+    background: rgb(187, 109, 240);
+    width: 100%;
+    height: 10%;
+    left: 0%;
+    right: 0%;
+    top: 125%;
+    text-align: center;
+    align-content: center;
     
+}
+</style>
+</head>
+<body>
+    <div id="header">header <a target="_blank" href="posicionamento.html">Posicionamentos</a></div>
+    <div id="menu">menu</div>
+    <div id="left">left</div>
+    <div id="center">center</div>
+    <div id="right">right</div>
+    <div id="footer">footer</div>
 </body>
 </html>
