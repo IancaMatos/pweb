@@ -3,13 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fixar Side Bar</title>
+    <title>Fixar Header</title>
+  <style>
+    body{
+        box-shadow: 10px;
+        background-image: url('./jb.avif');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #header{
+    position: fixed;
+    background:rgba(135, 206, 250, 0.5);
+    width: 100%;
+    height: 15%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    align-content: center;
+    z-index: 1000;
+}
+
+#menu{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background: rgba(255, 89, 89, 0.9);
+    top: 15%;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    align-content: center;
+
+}
+
+#left{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 0%;
+    right: 75%;
+    top: 25%;
+    text-align:center;
+    align-content: center;
+    background: rgba(233, 194, 66, 0.9);
+}
+
+#center{
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    top:25%;
+    right: 25%;
+    text-align:center;
+    align-content: center;
+    background: rgba(109, 211, 78, 0.9);
+}
+
+#right{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 75%;
+    right: 0%;
+    top: 25%;
+    text-align: center;
+    align-content: center;
+    background: rgba(236, 170, 72, 0.9);
+}
+
+#footer{
+    position: absolute;
+    background: rgba(188, 109, 240, 0.9);
+    width: 100%;
+    height: 10%;
+    left: 0%;
+    right: 0%;
+    top: 125%;
+    text-align: center;
+    align-content: center;
+    
+}
+</style>
 </head>
 <body>
-    <div>MAIN MENU</div>
-    <div>HEARDER</div>
-    <div>CONTENT</div>
-    <div>SIDE BAR</div>
-    <div>FOOTER</div>
+    <div id="header">header</div> 
+    <div id="menu">menu</div> 
+    <div id="left">left</div>
+    <div id="center">center</div>
+    <div id="right">right</div>
+    <div id="footer">footer</div>
 </body>
 </html>
