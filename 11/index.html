@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header, nav, aside, footer, section, article {
+            border: 1px solid #e1d9f3;
+            padding: 10px;
+            margin: 5px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        header {
+            clear: both;
+            background-color: rgb(32, 86, 131);
+            color: rgb(230, 25, 25);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-shadow: 2px 2px 5px rgb(25, 235, 217);
+
+        }
+        nav {
+            float: left;
+            width: 15%;
+            background-color: #ddd;
+            height: 100%;
+            font-weight: bold;
+            
+        }
+        main {
+            float: left;
+            width: 60%;
+        }
+    
+        aside {
+            float: right;
+            width: 20%;
+            background-color: #ddd;
+            
+            
+        }
+        footer {
+            clear: both;
+            text-align: center;
+            background-color: rgb(32, 86, 131);
+            color: white;
+        }
+        img {
+            max-width: 85%;
+            height: min-content;
+            display: block; 
+            margin-bottom: 7px; 
+            padding: 10px; 
+           
+        }
+        #page {
+            font-family: fantasy;
+            
+        }
+        h1 {
+            margin-left: 20px;
+        }
+        h2 {
+            color: rgb(63, 92, 116);
+     
+        }
+       
+        nav li {
+            list-style-type: none;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        nav li {
+            margin-bottom: 10px;
+        }
+
+        nav a:hover {
+            color: rgba(230, 25, 25);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 >Minha <span id="page">Page.COM</span></h1>
+</header>
+
+<nav>
+   <ul>
+        <li><a href="#">Carros</a></li>
+        <li><a href="#">Ciência</a></li>
+        <li><a href="#">Economia</a></li>
+        <li><a href="#">Educação</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section>
+        <div id="titulonoticias" > <h2 >Notícias </h2> </div>
+ 
+        
+        <article>
+            <h2>Imposto de Renda</h2>
+            <time datetime="2025-06-21"><span class="data">postado em 21 de junho de 2025</span></time>
+            <img src="./terra-IRRF.png" alt="Descrição da imagem" width="150">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur eaque doloribus...</p>
+            <footer>
+                <span class="autor">Postado por Ianca Matos</span>
+            </footer>
+        </article>
+        
+        <article>
+            <h2>Restituição do seu Imposto</h2>
+            <time datetime="2025-06-22"><span class="data">postado em 22 de junho de 2025</span></time>
+            <img src="./terra-IRRF.png" alt="Descrição da imagem" width="150">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur eaque doloribus...</p>
+            <footer>
+                <span class="autor">Postado por Ianca Matos</span>
+            </footer>
+        </article>
+        <article>
+            <h2>Como Fazer Para Reduzir Seu Imposto de Renda</h2>
+            <time datetime="2025-06-23"><span class="data">postado em 23 de junho de 2025</span></time>
+            <img src="./terra-IRRF.png" alt="Descrição da imagem" width="150">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur eaque doloribus...</p>
+            <footer>
+                <span class="autor">Postado por Ianca Matos</span>
+            </footer>
+        </article>
+        <article>
+            <h2>Titulo da postagem</h2>
+            <time datetime="2025-06-22"><span class="data">postado em 22 de junho de 2025</span></time>
+            <img src="./terra-IRRF.png" alt="Descrição da imagem" width="150">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur eaque doloribus...</p>
+            <footer>
+                <span class="autor">Postado por Ianca Matos</span>
+            </footer>
+        </article>
+    </section>
+</main>
+
+<aside>
+    <h2>Anúncios</h2>
+    <img src="./images (1).jpg" alt="Imagem lateral 1">
+    <img src="./image2.jpg" alt="Imagem lateral 2">
+    <img src="./images3.jpg" alt="images lateral 3">
+    <img width="500px" src="./download.jpg" alt="images lateral 4">
+    <img src="./blog_3309_636446131808534779.jpg" alt="images lateral 5">
+
+</aside>
+
+<footer>
+    <p>Rodapé do site</p>
+</footer>
+
+</body>
+</html>
