@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 23</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        let linguagens = Array();
+        linguagens[0] = 'Dart';
+        linguagens[1] = 'PHP';
+        linguagens[2] = 'Java';
+        linguagens[3] = 'Pyton';
+        linguagens[4] = 'Perl';
+        linguagens[5] = 'Ruby on Rails';
+        linguagens[6] = 'C ++';
+
+        
+        
+        function  mostrarListaLiguagens(){
+        const container = document.getElementById('minhaDiv');
+            for(var i = 0; i <linguagens.length; i++) {
+                var tag = '<h5>' + i + '-'+ linguagens[i] + '</h5>';
+                container.innerHTML += tag;
+            }
+    }
+    function posicaoLinguagens(){
+        var indice = prompt('Qual posição da lista deseja consultar?');
+        alert(libguagens[indice]);
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Array de Lingugens</h1>
+
+    <button onclick="mostrarListaLiguagens()">Criar Arrey</button> <br><br>
+    <button onclick="posicaoLinguagens()">Posição no Array</button>
+    <hr>
+    <div id="minhaDiv"></div>
+</body>
+</html>
